@@ -1,0 +1,134 @@
+html { 
+    background: url('todo.png') no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+::selection {
+    background: transparent;
+}
+
+.container {
+    position: absolute;
+    height: 25pc;
+    width: 20pc;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 5px black;
+    border-radius: 10px 10px;
+}
+
+.addTxt {
+    position: absolute;
+    height: 5px;
+    width: 60%;
+    margin: auto;
+    top: 25px;
+    right: 0;
+    left: 0;
+    outline: none;
+    border: none;
+    padding: 20px;
+    padding-right: 50px;
+    border-radius: 10px 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.addBtn {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin: auto;
+    top: 15px;
+    right: 35px;
+    cursor: pointer;
+}
+
+.addBtn img {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin: auto;
+    top: 25px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.list {
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.list::-webkit-scrollbar {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background: pink; 
+    border-radius: 10px;
+  }
+
+.element {
+    position: relative;
+    height: fit-content;
+    width: 55%;
+    right: -1px;
+    text-align: left;
+    transition: 0.2s;
+    padding: 10px;
+    background: #fff;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 2px;
+    padding-right: 80px;
+    border-radius: 10px 10px;
+    word-wrap: break-word;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.element .tick {
+    position: absolute;
+    margin: auto;
+    height: 20px;
+    top: 0;
+    bottom: 0;
+    right: 50px;
+    float: right;
+    z-index: +5;
+   
+}
+
+.element .dustbin {
+    position: absolute;
+    margin: auto;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    float: right;
+    z-index: +5;
+    filter: grayscale(1);
+}
+
+.element:hover {
+    transform: scale(1.1);
+}
