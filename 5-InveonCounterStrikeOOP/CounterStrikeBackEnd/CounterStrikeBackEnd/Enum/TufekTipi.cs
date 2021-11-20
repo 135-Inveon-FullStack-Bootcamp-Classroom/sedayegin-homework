@@ -8,6 +8,6 @@ namespace CounterStrikeBackEnd.Enum
 {
    public enum TufekTipi
     {
-        Taramalı, Pompalı, tek
+        Taramalı, Pompalı
     }
 }
