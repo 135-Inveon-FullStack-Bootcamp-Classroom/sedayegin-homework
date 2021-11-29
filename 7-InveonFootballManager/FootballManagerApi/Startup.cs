@@ -31,7 +31,7 @@ namespace FootballManagerApi
             services.AddScoped<ITacticService, TacticService>();
             services.AddScoped<INationalTeamService, NationalTeamService>();
             services.AddScoped<IManagementPositionService, ManagementPositionService>();
-            services.AddScoped<ICoachService, CoachService>();
+            services.AddScoped<IPositionService, PositionService>();
 
             services.AddScoped<IUnitOfWork, UnitOfWork.UnitOfWork>();
 
